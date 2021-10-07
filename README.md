@@ -6,7 +6,7 @@ O objetivo deste desafio é construir 5 projetos diferentes em 5 dias com React 
 
 Descrição:
 
-# Projeto 02 - Gerenciador de Despesas
+# Projeto 02 - Sistema de Finanças Pessoais
 
 Descrição:
 
