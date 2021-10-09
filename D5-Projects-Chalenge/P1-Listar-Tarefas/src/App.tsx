@@ -1,55 +1,55 @@
 import { useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import * as C from './App.style';
+import { Item } from './types/item';
+import { ListItem } from './components/ListItem';
+import { AddArea } from './components/AddArea';
 
-import './App.css';
+const App = () => {
 
+  const [list, setList] = useState<Item[]>([
+    { id: 1, name: 'Comprar pão', done: false},
+    { id: 2, name: 'Comprar chouriço', done: false},
+    { id: 3, name: 'Comprar gasosa', done: false}
+  ]);
 
-function App() {
-
-  const [name, setName] = useState("Wilson");
-  const [age, setAge] = useState(90);
-  const [bg, setBg] = useState("#ff0");
-
-  const [list, seList] = useState([
-    "O rato roeu a roupa da rainha",
-    "Aqui vem uma frase poéticca",
-    "Programador banana"
-  ])
-
-  const handle20 = () => {
-    setAge(20)
-    setBg("00ff00")
+  const handleAddTask = (taskName: string) => {
+    let newList = [...list];
+    newList.push({
+      id: list.length + 1,
+      name: taskName,
+      done: false
+    });
+    setList(newList);
   }
 
-  const handle90 = () => {
-    setAge(90)
-    setBg("ff00")
+   // Função feita para tarefinha de casa.
+ const handleTaskChange = (id: number, done: boolean) => {
+  let newList = [...list];
+  for(let i in newList) {
+    if(newList[i].id === id) {
+      newList[i].done = done;
+    }
   }
+  setList(newList);
+}
 
   return (
-    <div style={{ backgroundColor: bg }}>
-      <Header name={name} age={age}/>
+    <div>
+      <C.Container>
+        <C.Area>
+          <C.Header> Lista de Tarefas</C.Header>
 
-      { age === 90 && 
-        <button onClick={handle20}>Tenho 20 anos</button>
-      }
+          <AddArea onEnter={handleAddTask} />
 
-      { age === 20 && 
-         <button onClick={handle90}>Tenho 90 anos</button>
-      }
-
-      <hr/>
-
-      <ul>
-        {
-          list.map((frase, index) => (
-            <li key={index}>{frase}</li>
-          ))
-        }
-      </ul>
-
-      <Footer />
+          {list.map((item, index) => (
+            <ListItem 
+              key={index} 
+              item={item}
+              onChange={handleTaskChange}
+            />
+          ))}
+        </C.Area>
+      </C.Container>
     </div>
   );
 }
