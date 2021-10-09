@@ -4,3 +4,9 @@ O objetivo deste desafio é construir 5 projetos diferentes em 5 dias com React 
 
 # Projeto 01 - Lista de Tarefas
 
+Descrição:
+
+# Projeto 02 - Sistema de Finanças Pessoais
+
+Descrição:
+
