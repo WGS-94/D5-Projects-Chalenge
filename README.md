@@ -33,6 +33,7 @@ Descrição:
   * [Axios](https://www.npmjs.com/package/axios)
   * [React Modal](https://www.npmjs.com/package/react-modal)
   * [Polished](https://www.npmjs.com/package/polished)
+  * [Firebase]()
 * [TypeScript](https://www.typescriptlang.org/)
 
 <!--
