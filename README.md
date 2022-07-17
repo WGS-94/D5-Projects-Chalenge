@@ -25,3 +25,36 @@ Descrição:
 # Projeto 05 - Formulário Multi-Etapas em React
 
 Descrição:
+
+## 🧰 Tecnologias e Bibliotecas
+
+* [ReactJS](https://pt-br.reactjs.org/tutorial/tutorial.html)
+  * [Styled Component](https://www.npmjs.com/package/styled-components) - Biblioteca CSS in JS
+  * [Axios](https://www.npmjs.com/package/axios)
+  * [React Modal](https://www.npmjs.com/package/react-modal)
+  * [Polished](https://www.npmjs.com/package/polished)
+* [TypeScript](https://www.typescriptlang.org/)
+
+<!--
+### Tools para criar API Fake
+ * [MirageJS]()
+
+## ⚙️ Rodando o Projeto
+```bash
+# Clone este repositório para a pasta anterior
+$ git clone https://github.com/WGS-94/Dt-Money-Transation.git
+# ou use a opção de download.
+# Acesse a pasta Dt-Money-Transation
+$ cd Dt-Money-Transation
+# Instale as dependências
+$ yarn install
+ou
+$ npm install
+# Executando o Projeto
+$ yarn start 
+ou
+$ npm start
+# Acesse http://localhost:3000 no seu navagador
+```
+-->
+Feito com 💖 by WGS-94
