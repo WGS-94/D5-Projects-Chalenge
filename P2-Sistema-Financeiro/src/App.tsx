@@ -67,7 +67,6 @@ const App = () => {
 
       <TableArea list={filteredList} />
 
-
       </C.Body>
     </C.Container>
   );
