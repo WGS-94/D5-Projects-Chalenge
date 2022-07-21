@@ -1,15 +1,16 @@
-import React from 'react';
+import * as C from './styles';
 
-import * as S from './style';
-
-const ResumeItem = () => {
-  return (
-    <div>
-      <S.Container>
-        <h1>Input type text</h1>
-      </S.Container>
-    </div>
-  )
+type Props = {
+    title: string;
+    value: number;
+    color?: string;
 }
 
-export default ResumeItem;
+export const ResumeItem = ({ title, value, color }: Props) => {
+    return (
+        <C.Container>
+            <C.Title>{title}</C.Title>
+            <C.Info color={color}>R$ {value}</C.Info>
+        </C.Container>
+    );
+}

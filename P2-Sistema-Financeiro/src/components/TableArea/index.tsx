@@ -1,15 +1,28 @@
-import React from 'react';
+import { Item } from '../../types/Item';
+import { TableItem } from '../TableItem';
 
-import * as S from './style';
+import * as C from './styles';
 
-const TableArea = () => {
-  return (
-    <div>
-      <S.Container>
-        <h1>Input type text</h1>
-      </S.Container>
-    </div>
-  )
+type Props = {
+    list: Item[]
 }
 
-export default TableArea;
+export const TableArea = ({ list }: Props) => {
+    return (
+        <C.Table>
+            <thead>
+                <tr>
+                    <C.TableHeadColumn width={100}>Data</C.TableHeadColumn>
+                    <C.TableHeadColumn width={130}>Categoria</C.TableHeadColumn>
+                    <C.TableHeadColumn>Título</C.TableHeadColumn>
+                    <C.TableHeadColumn width={150}>Valor</C.TableHeadColumn>
+                </tr>
+            </thead>
+            <tbody>
+                {list.map((item, index)=>(
+                    <TableItem key={index} item={item} />
+                ))}
+            </tbody>
+        </C.Table>
+    );
+}
