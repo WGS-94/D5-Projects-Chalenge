@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import * as C from './styles';
 import { Header } from '../Header';
-import { SidebarItem } from '../SidebarItem';
+import { SidebarItem } from '../SideBarItem'
 import { useForm } from '../../contexts/FormContext';
 
 type Props = {
