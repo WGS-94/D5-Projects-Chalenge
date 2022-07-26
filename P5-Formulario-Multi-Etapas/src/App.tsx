@@ -1,7 +1,10 @@
+import { Router } from './routes';
+import { FormProvider } from './contexts/FormContext';
+
 export default function App() {
   return (
-    <div className="App">
-     <h1>Heloo Friendss</h1>
-    </div>
+    <FormProvider>
+      <Router />
+    </FormProvider>
   );
 }
