@@ -1,9 +1,12 @@
-//import * as C from './App.styles';
+import * as S from './App.style';
 
 const App = () => {
   return (
-   
-    <div>Oláaaaaaaa</div>
+    <S.Container>
+      <S.Area>
+        <S.Header>Galeria de Fotos</S.Header>
+      </S.Area>
+    </S.Container>
   );
 }
 
