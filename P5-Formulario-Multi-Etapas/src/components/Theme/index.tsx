@@ -1,8 +1,10 @@
 import { ReactNode } from 'react';
-import * as C from './styles';
+
+import { useForm } from '../../contexts/FormContext';
 import { Header } from '../Header';
 import { SidebarItem } from '../SideBarItem'
-import { useForm } from '../../contexts/FormContext';
+
+import * as S from './styles';
 
 type Props = {
     children: ReactNode;
@@ -13,12 +15,12 @@ export const Theme = ({ children }: Props) => {
     const { state } = useForm();
 
     return (
-      <C.Container>
-        <C.Area>
+      <S.Container>
+        <S.Area>
             <Header />
 
-            <C.Steps>
-              <C.Sidebar>
+            <S.Steps>
+              <S.Sidebar>
                   
                 <SidebarItem
                     title="Pessoal"
@@ -44,12 +46,12 @@ export const Theme = ({ children }: Props) => {
                     active={state.currentStep === 3}
                 />
                   
-              </C.Sidebar>
-              <C.Page>
+              </S.Sidebar>
+              <S.Page>
                   {children}
-              </C.Page>
-          </C.Steps>
-        </C.Area>
-      </C.Container>
+              </S.Page>
+          </S.Steps>
+        </S.Area>
+      </S.Container>
     );
 }

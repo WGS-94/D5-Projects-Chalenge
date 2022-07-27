@@ -8,14 +8,17 @@ type State = {
     email: string;
     github: string;
 }
+
 type Action = {
     type: FormActions;
     payload: any;
 };
+
 type ContextType = {
     state: State;
     dispatch: (action: Action) => void;
 }
+
 type FormProviderProps = {
     children: ReactNode
 };
