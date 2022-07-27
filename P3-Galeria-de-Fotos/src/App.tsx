@@ -24,7 +24,7 @@ const App = () => {
   const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    /*
+   
       const formData = new FormData(e.currentTarget);
       const file = formData.get('image') as File;
 
@@ -41,7 +41,7 @@ const App = () => {
           setPhotos(newPhotoList);
         }
       }
-     */
+     
   }
 
   const handleDeleteClick = async (name: string) => {
