@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import * as C from './styles';
+
 import { ReactComponent as ProfileIcon } from '../../svgs/profile.svg';
 import { ReactComponent as BookIcon } from '../../svgs/book.svg';
 import { ReactComponent as MailIcon } from '../../svgs/mail.svg';
 
-
+import * as C from './styles';
 
 type Props = {
     title: string;
