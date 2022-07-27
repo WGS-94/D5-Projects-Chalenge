@@ -1,10 +1,12 @@
-# Desafio 5 Projetos em 5 dias
+# Desafio 5 Projetos em 5 dias 🔥
 
 O objetivo deste desafio é construir 5 projetos diferentes em 5 dias com React js, usando TypeScript
 
 # Projeto 01 - Lista de Tarefas
 
-Descrição: 
+Descrição:
+
+<!-- Neste desafio, foi desenvolvido um no estilo todo-list-->
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/87288949/136671831-c72a2e60-a9d1-42e0-99a9-134773057490.PNG" alt="todo app" />
@@ -22,9 +24,9 @@ Descrição:
 
 Descrição:
 
-# Projeto 05 - Formulário Multi-Etapas em React ![FormSteps]()
+# Projeto 05 - Formulário Multi-Etapas em React
 
-Descrição: Neste desafio, foi desenvolvido um formulário multi etapas para cadastro de programadores
+Descrição: Neste desafio, foi desenvolvido um formulário Multi etapas (três etapas) para cadastro de desenvolvedores que estão procurando uma efetivação no mercado
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/87288949/181134916-49d122a0-53a4-4fea-83b5-493e406f584a.PNG" alt="Form Steps" />
