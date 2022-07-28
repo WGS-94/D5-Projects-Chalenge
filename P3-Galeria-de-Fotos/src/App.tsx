@@ -1,8 +1,8 @@
 import { useState, useEffect, FormEvent } from 'react';
-
 import { Photo } from './types/Photo';
 import { PhotoItem } from './components/PhotoItem';
 
+import * as Photos from './services/photos';
 import * as S from './App.style';
 
 const App = () => {
