@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 import { Character } from './components/Character';
-import { useCharacter } from './hooks/useCharacter';
+import { useCharacter } from './hook/useCharacter';
 
 import * as S from './App.styles';
 
@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
-  }, []);
+  });
 
   const handleKeyDown = (e: KeyboardEvent) => {
     switch(e.code) {
