@@ -17,7 +17,7 @@ const App = () => {
 
   const getPhotos = async () => {
     setLoading(true);
-    //setPhotos(await Photos.getAll());
+    setPhotos(await Photos.getAll());
     setLoading(false);
   }
 
@@ -45,7 +45,7 @@ const App = () => {
   }
 
   const handleDeleteClick = async (name: string) => {
-   // await Photos.deletePhoto(name);
+    await Photos.deletePhoto(name);
     getPhotos();
   }
 
