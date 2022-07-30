@@ -4,7 +4,7 @@ import { mapSpots } from '../data/mapSpots';
 
 export const useCharacter = (propName: string) => {
     const [name, setName] = useState(propName);
-    const [pos, setPos] = useState({ x: 3, y: 5 });
+    const [pos, setPos] = useState({ x: 15, y: 6 });
     const [side, setSide] = useState<CharacterSides>('down');
 
     const moveLeft = () => {
