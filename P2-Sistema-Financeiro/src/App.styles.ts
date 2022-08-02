@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  /* border: 1px solid red; */
+`;
 
 export const Header = styled.div`
     background-color: darkblue;
