@@ -1,10 +1,9 @@
 import { useState } from 'react';
+import * as C from './styles';
 import { Item } from '../../types/Item';
 
 import { categories } from '../../data/categories';
 import { newDateAdjusted } from '../../helpers/dateFilter';
-
-import * as C from './styles';
 
 type Props = {
   onAdd: (item: Item) => void;
@@ -55,34 +54,34 @@ export const InputArea = ({ onAdd }: Props) => {
   }
 
   return (
-    <C.Container>
-      <C.InputLabel>
-        <C.InputTitle>Data</C.InputTitle>
-        <C.Input type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
-      </C.InputLabel>
-      <C.InputLabel>
-        <C.InputTitle>Categoria</C.InputTitle>
-        <C.Select value={categoryField} onChange={e => setCategoryField(e.target.value)}>
-          <>
-            <option></option>
-            {categoryKeys.map((key, index) => (
-              <option key={index} value={key}>{categories[key].title}</option>
-            ))}
-          </>
-        </C.Select>
-      </C.InputLabel>
-      <C.InputLabel>
-        <C.InputTitle>Título</C.InputTitle>
-        <C.Input type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
-      </C.InputLabel>
-      <C.InputLabel>
-        <C.InputTitle>Valor</C.InputTitle>
-        <C.Input type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
-      </C.InputLabel>
-      <C.InputLabel>
-        <C.InputTitle>&nbsp;</C.InputTitle>
-        <C.Button onClick={handleAddEvent}>Adicionar</C.Button>
-      </C.InputLabel>
-    </C.Container>
+      <C.Container>
+        <C.InputLabel>
+          <C.InputTitle>Data</C.InputTitle>
+          <C.Input type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
+        </C.InputLabel>
+        <C.InputLabel>
+          <C.InputTitle>Categoria</C.InputTitle>
+          <C.Select value={categoryField} onChange={e => setCategoryField(e.target.value)}>
+            <>
+              <option></option>
+              {categoryKeys.map((key, index) => (
+                <option key={index} value={key}>{categories[key].title}</option>
+              ))}
+            </>
+          </C.Select>
+        </C.InputLabel>
+        <C.InputLabel>
+          <C.InputTitle>Título</C.InputTitle>
+          <C.Input type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
+        </C.InputLabel>
+        <C.InputLabel>
+          <C.InputTitle>Valor</C.InputTitle>
+          <C.Input type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
+        </C.InputLabel>
+        <C.InputLabel>
+          <C.InputTitle>&nbsp;</C.InputTitle>
+          <C.Button onClick={handleAddEvent}>Adicionar</C.Button>
+        </C.InputLabel>
+      </C.Container>
   );
 }

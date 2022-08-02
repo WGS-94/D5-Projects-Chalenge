@@ -40,6 +40,7 @@ export const Button = styled.button`
     background-color: lightblue;
     color: black;
     cursor: pointer;
+
     &:hover {
         background-color: blue;
         color: white;
