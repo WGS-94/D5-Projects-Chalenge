@@ -14,7 +14,12 @@ Descrição:
 
 # Projeto 02 - Sistema de Finanças Pessoais
 
-Descrição:
+Descrição: Sistema financeiro para gerenciamento de contas pessoais
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/87288949/182267147-f1f71af8-1e4a-4a38-9071-627069d089d8.PNG" alt="expensive tracker" />
+</div>
+
 
 # Projeto 03 - Galeria de Fotos
 
