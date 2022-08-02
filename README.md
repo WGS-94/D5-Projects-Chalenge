@@ -4,7 +4,7 @@ O objetivo deste desafio é construir 5 projetos diferentes em 5 dias com React 
 
 # Projeto 01 - Lista de Tarefas
 
-Descrição:
+Descrição: Neste desafio, foi desenvolvido um mini projeto no estilo todo-list, com funcionalidades de adicionar, finalizar e excluir uma ou mais tarefas  
 
 <!-- Neste desafio, foi desenvolvido um no estilo todo-list-->
 
@@ -14,7 +14,12 @@ Descrição:
 
 # Projeto 02 - Sistema de Finanças Pessoais
 
-Descrição:
+Descrição: Neste desafio, foi desenvolvido um sistema sinanceiro para gerenciamento de contas pessoais, com intuito de administrar melhor os seus ganhos e gastos
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/87288949/182267147-f1f71af8-1e4a-4a38-9071-627069d089d8.PNG" alt="expensive tracker" />
+</div>
+
 
 # Projeto 03 - Galeria de Fotos
 
