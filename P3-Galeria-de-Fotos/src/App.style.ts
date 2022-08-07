@@ -4,8 +4,9 @@ export const Container = styled.div`
     background-color: #27282F;
     color: #FFF;
     min-height: 100vh;
+    padding: 2rem;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `;
 
 export const Area = styled.div`
