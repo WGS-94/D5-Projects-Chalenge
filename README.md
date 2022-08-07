@@ -27,7 +27,7 @@ Descrição:
 
 # Projeto 04 - Jogo RPG
 
-Descrição:
+Descrição: Neste desafio, foi desenvolvido um simples jogo chamado RPG (Role Playing Game), em tradução livre, jogo de interpretação de papéis. Ou seja, um RPG é um jogo em que as pessoas interpretam seus personagens e criam narrativas que giram em torno de um enredo.
 
 # Projeto 05 - Formulário Multi-Etapas em React
 
