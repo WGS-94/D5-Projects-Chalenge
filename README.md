@@ -23,7 +23,7 @@ Descrição: Neste desafio, foi desenvolvido um sistema sinanceiro para gerencia
 
 # Projeto 03 - Galeria de Fotos
 
-Descrição:
+Descrição: Neste desafio, foi desenvolvido um sistema para fazer uploads de fotos e salvar no storage do firebase
 
 # Projeto 04 - Jogo RPG
 
