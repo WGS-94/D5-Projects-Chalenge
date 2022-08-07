@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import "react-toastify/dist/ReactToastify.css";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -15,12 +14,12 @@ const GlobalStyle = createGlobalStyle`
 }
 
  html, body, #root {
-  height: 100%;
+  height: 100vh;
 }
 
-/* body {
-  background: #2C2641;
-} */
+body {
+  background: #2C26;
+}
 
 
 html, 

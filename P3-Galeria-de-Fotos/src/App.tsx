@@ -5,6 +5,8 @@ import { PhotoItem } from './components/PhotoItem';
 import * as Photos from './services/photos';
 import * as S from './App.style';
 
+import GlobalStyle from './global';
+
 const App = () => {
 
   const [uploading, setUploading] = useState(false);
@@ -50,6 +52,7 @@ const App = () => {
   }
 
   return (
+    <>
     <S.Container>
       <S.Area>
         <S.Header>Galeria de Fotos</S.Header>
@@ -89,6 +92,8 @@ const App = () => {
 
       </S.Area>
     </S.Container>
+    <GlobalStyle />
+    </>
   );
 }
 
